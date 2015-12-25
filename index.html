@@ -2,7 +2,7 @@
 <html lang="">
   <head>
     <meta charset="utf-8">
-    <title>test</title>
+    <title data-l10n-id="title">mozmp beta</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -12,90 +12,108 @@
 
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <!-- custom styles imports -->
+    <link href="locales/locales.ini" rel="prefetch" type="application/l10n">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet">
+    <link href="styles/font-awesome.min.css" rel="stylesheet">
+    <link href="styles/foundation.min.css" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    
+    <div class="tabzilla-white-border"></div>
+    <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
+    <section id="bgfx">
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">test</h3>
-      </div>
-
       <div class="jumbotron">
-        <h1>'Allo, 'Allo!</h1>
-        <p class="lead">Always a pleasure scaffolding your apps.</p>
-        <p><a class="btn btn-lg btn-success" href="#">Splendid! <span class="glyphicon glyphicon-ok"></span></a></p>
-      </div>
-
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4><a href="https://html5boilerplate.com/">HTML5 Boilerplate</a></h4>
-          <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
-
-          
-
-          <h4><a href="http://getbootstrap.com/">Bootstrap</a></h4>
-          <p>Sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.</p>
-
-          
-        </div>
-      </div>
-
-      <div class="footer">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+        <h1 data-l10n-id="ahoy">'Ahoy!</h1>
+        <p class="lead" data-l10n-id="horse"> Hold your horses, It takes time to get things done.</p>
+        <p class="lead">&#128513;</p>
+        <p class="lead">&#x1f602;</p>
+        <p class="lead">This text is for test</p>
+        <p class="lead">It will not get translated</p>
       </div>
     </div>
-    
-
+  </section>
+    <footer class="container-fluid">
+  <div class="row footer-row">
+    <div class="small-12 large-2 columns">
+      <img src="images/footer-mozilla-white.png"/>
+    </div>
+    <div class="small-12 large-4 columns">
+      <p><span data-l10n-id="copyright">Portions of this content are &#0169; 1998-2014 by individual mozilla.org contributors. Content available under a</span> <a href="https://www.mozilla.org/en-US/foundation/licensing/website-content" target="_blank" data-l10n-id="creative-commons-license">Creative Commons license</a><span data-l10n-id="optional-cc-sentence-terminator"></span></p>
+      <p><a href="https://www.mozilla.org/en-US/contribute/page" target="_blank" data-l10n-id="contribute">Contribute to this page</a></p>
+    </div>
+    <div class="small-12 large-6 columns">
+      <div class="small-6 columns">
+        <ul>
+          <li><a href="https://www.mozilla.org/en-US/contact/spaces" target="_blank" data-l10n-id="contact-us">Contact Us</a></li>
+          <li><a href="https://www.mozilla.org/en-US/privacy" target="_blank" data-l10n-id="privacy-policy">Privacy Policy</a></li>
+          <li><a href="https://www.mozilla.org/en-US/about/legal" target="_blank" data-l10n-id="legal-notices">Legal Notices</a></li>
+          <li><a href="https://www.mozilla.org/en-US/about/legal/fraud-report/" target="_blank" data-l10n-id="report-trademark-abuse">Report Trademark Abuse</a></li>
+        </ul>
+      </div>
+      <div class="small-6  columns">
+        <ul>
+          <li><a href="https://twitter.com/firefox" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com/Firefox" target="_blank">Facebook</a></li>
+          <li><a href="https://affiliates.mozilla.org/en-US/" target="_blank">Firefox Affiliates</a></li>
+          <li>
+            <label for="language"><span data-l10n-id="other-languages">Other languages:</span></label>
+            <select id="language" name="language" onchange="document.webL10n.setLanguage(this.value);">
+              <option value="en">English</option>
+              <option value="hi">हिंदी</option>
+              <option value="ur">اردو</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div>
+<p data-l10n-id="love">Made with <span class="glyphicon glyphicon-heart"></span> <span data-l10n-id="love1"> by mozmp dev team</span></p>
+  </div>
+</footer>
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="scripts/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
-    
+
     <!-- build:js(.) scripts/plugins.js -->
-    <script src="/bower_components/bootstrap/js/affix.js"></script>
-    <script src="/bower_components/bootstrap/js/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/transition.js"></script>
-    <script src="/bower_components/bootstrap/js/button.js"></script>
-    <script src="/bower_components/bootstrap/js/popover.js"></script>
-    <script src="/bower_components/bootstrap/js/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/tab.js"></script>
+    <script src="scripts/affix.js"></script>
+    <script src="scripts/alert.js"></script>
+    <script src="scripts/dropdown.js"></script>
+    <script src="scripts/tooltip.js"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/transition.js"></script>
+    <script src="scripts/button.js"></script>
+    <script src="scripts/popover.js"></script>
+    <script src="scripts/carousel.js"></script>
+    <script src="scripts/scrollspy.js"></script>
+    <script src="scripts/collapse.js"></script>
+    <script src="scripts/tab.js"></script>
     <!-- endbuild -->
-    
+
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
-
+    <!-- custom scripts import -->
+    <script src="scripts/l10n.js"></script>
+    <script src="https://mozorg.cdn.mozilla.net/media/js/libs/jquery-1.11.0.min.js"></script>
+    <script src="https://mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+
   </body>
 </html>
